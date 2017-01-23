@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>To find your current location</string>
+	<string>To find your location in order to accurately report the ice depth at your location</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
