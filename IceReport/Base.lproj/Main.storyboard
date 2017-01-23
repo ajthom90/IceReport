@@ -115,7 +115,7 @@
                         <outlet property="emailAddressField" destination="SqP-o2-z5f" id="KHk-ID-Fme"/>
                         <outlet property="passwordField" destination="qo4-Q2-L4I" id="hiE-zo-p6A"/>
                         <segue destination="nlZ-g7-Oxr" kind="show" identifier="loginAndShowMapSegue" id="OpY-yq-JnH"/>
-                        <segue destination="zC2-Uu-aAI" kind="show" id="itr-sd-Lio"/>
+                        <segue destination="zC2-Uu-aAI" kind="show" identifier="registerUserSegue" id="itr-sd-Lio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcW-rk-IWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
