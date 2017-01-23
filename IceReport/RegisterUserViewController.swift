@@ -21,7 +21,12 @@ class RegisterUserViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet var emailBox: UITextField!
+    @IBOutlet var passwordBox: UITextField!
+    @IBOutlet var usernameBox: UITextField!
 
+    
+    
     /*
     // MARK: - Navigation
 
