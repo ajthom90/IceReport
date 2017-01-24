@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qNP-ZZ-eZM">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="AF1-Iu-x5D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kWU-KG-Vmi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wce-bJ-5gM">
@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="height" constant="30" id="NA3-mD-0iF"/>
                                 </constraints>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerTapped:" destination="qNP-ZZ-eZM" eventType="touchUpInside" id="HWl-50-hIu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf4-Ew-El7">
                                 <rect key="frame" x="16" y="28" width="288" height="46"/>
@@ -131,7 +134,7 @@
                         <viewControllerLayoutGuide type="bottom" id="atV-hf-Van"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8kS-ti-sit">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-33-oWC">
@@ -246,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1g-x4-nCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2771.0144927536235" y="469.56521739130437"/>
+            <point key="canvasLocation" x="2762" y="518"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="PXC-ka-XeZ">
@@ -257,11 +260,11 @@
                         <viewControllerLayoutGuide type="bottom" id="qBN-TS-KaC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZPF-MI-zgu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R0-aj-grY">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Pvt-Pm-0GR"/>
                                 </constraints>
@@ -286,7 +289,7 @@
                                 </items>
                             </toolbar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsPointsOfInterest="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMd-rg-1Af">
-                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDq-l3-e42">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -333,7 +336,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JmT-pe-of1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TSU-We-0W9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-Tm-EdX">
@@ -358,7 +361,7 @@
                                 </items>
                             </navigationBar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvo-WE-6II">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <connections>
                                     <segue destination="NdW-o3-9QK" kind="embed" id="FHq-2o-d9u"/>
                                 </connections>
@@ -391,8 +394,8 @@
         <scene sceneID="Erb-qf-tA3">
             <objects>
                 <tableViewController id="NdW-o3-9QK" customClass="SettingsTableViewController" customModule="IceReport" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="jRG-yZ-4lk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="jRG-yZ-4lk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -503,6 +506,34 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Days Back to Show on Map" id="Pwt-KZ-WqU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pCy-0b-x2q" detailTextLabel="Gip-1P-kd1" style="IBUITableViewCellStyleValue1" id="4Cu-fg-gDd">
+                                        <rect key="frame" x="0.0" y="359" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Cu-fg-gDd" id="8iy-yP-pwL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Number of days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pCy-0b-x2q">
+                                                    <rect key="frame" x="15" y="11" width="122" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gip-1P-kd1">
+                                                    <rect key="frame" x="241" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="NdW-o3-9QK" id="mUK-Vo-tKy"/>
@@ -511,13 +542,70 @@
                     </tableView>
                     <connections>
                         <outlet property="mapTypeControl" destination="3OV-Ji-gEc" id="xTt-jD-J83"/>
+                        <outlet property="numberOfDaysLabel" destination="Gip-1P-kd1" id="JmT-ns-xcu"/>
                         <outlet property="showDateTimeSwitch" destination="WhD-Iu-YEu" id="GDC-L3-rEF"/>
                         <outlet property="useMetricSwitch" destination="vqZ-Xf-E8s" id="mxE-Hg-3HK"/>
+                        <segue destination="VSv-Yp-9f9" kind="show" identifier="numberOfDaysSegue" id="TmP-TO-e3U"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDG-Mk-F1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5233.125" y="552.46478873239437"/>
+            <point key="canvasLocation" x="5228" y="546"/>
+        </scene>
+        <!--Number Of Days Picker View Controller-->
+        <scene sceneID="Cly-Tl-vdI">
+            <objects>
+                <viewController id="VSv-Yp-9f9" customClass="NumberOfDaysPickerViewController" customModule="IceReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJy-3e-kOX"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVd-vK-SjI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vcv-y2-LXG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lF-BT-Kq3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xUW-F0-ecf"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Days To Search" id="aTe-8O-pms">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="5N4-vD-o0R">
+                                            <connections>
+                                                <action selector="cancelTapped:" destination="VSv-Yp-9f9" id="HRj-ao-yOf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NKd-hL-E1V">
+                                            <connections>
+                                                <action selector="doneTapped:" destination="VSv-Yp-9f9" id="8E5-5k-8JW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-Q2-wQe">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4lF-BT-Kq3" firstAttribute="leading" secondItem="Vcv-y2-LXG" secondAttribute="leading" id="DL0-zq-S66"/>
+                            <constraint firstItem="cCG-Q2-wQe" firstAttribute="top" secondItem="dJy-3e-kOX" secondAttribute="bottom" constant="44" id="HbZ-Ew-wSf"/>
+                            <constraint firstItem="4lF-BT-Kq3" firstAttribute="top" secondItem="dJy-3e-kOX" secondAttribute="bottom" id="RCv-d1-q9R"/>
+                            <constraint firstAttribute="trailing" secondItem="cCG-Q2-wQe" secondAttribute="trailing" id="bTl-oA-Bkz"/>
+                            <constraint firstItem="cCG-Q2-wQe" firstAttribute="leading" secondItem="Vcv-y2-LXG" secondAttribute="leading" id="d3B-3Q-Iks"/>
+                            <constraint firstItem="VVd-vK-SjI" firstAttribute="top" secondItem="cCG-Q2-wQe" secondAttribute="bottom" id="qex-GC-a1f"/>
+                            <constraint firstAttribute="trailing" secondItem="4lF-BT-Kq3" secondAttribute="trailing" id="zEk-ow-8hW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="cCG-Q2-wQe" id="53w-Px-cHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrT-GQ-nin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6075" y="545"/>
         </scene>
         <!--Add Ice Report View Controller-->
         <scene sceneID="k1M-Ud-UEN">
@@ -528,11 +616,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Qja-NN-hSZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uYw-1Y-iDP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAl-s2-3dm">
-                                <rect key="frame" x="0.0" y="64" width="320" height="484"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="396"/>
                             </pickerView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhU-le-jlC">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>

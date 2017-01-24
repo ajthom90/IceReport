@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160668341E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */; };
+		160668361E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160668351E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift */; };
 		165AA4AB1E3419AB00579836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165AA4AA1E3419AB00579836 /* AppDelegate.swift */; };
 		165AA4AD1E3419AB00579836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165AA4AC1E3419AB00579836 /* ViewController.swift */; };
 		165AA4B01E3419AB00579836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165AA4AE1E3419AB00579836 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfDaysPickerViewController.swift; sourceTree = "<group>"; };
+		160668351E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfDaysToSearchDelegate.swift; sourceTree = "<group>"; };
 		165AA4A71E3419AB00579836 /* IceReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165AA4AA1E3419AB00579836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165AA4AC1E3419AB00579836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +37,7 @@
 		165AA4B11E3419AB00579836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165AA4B41E3419AB00579836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165AA4B61E3419AB00579836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		165AA4BE1E341AB100579836 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		165AA4BE1E341AB100579836 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		165AA4C01E34299800579836 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		165AA4C31E34405B00579836 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		165AA4C51E34427100579836 /* IceReportAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceReportAnnotation.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			children = (
 				165AA4C71E345A7200579836 /* AddIceReportDelegate.swift */,
 				1664FAE81E36730F00E3E8D4 /* IceReportMapDelegate.swift */,
+				160668351E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -116,10 +121,11 @@
 			children = (
 				165AA4CB1E3463EA00579836 /* AddIceReportViewController.swift */,
 				165AA4BE1E341AB100579836 /* MapViewController.swift */,
+				160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */,
 				165AA4C91E345B8300579836 /* RegisterUserViewController.swift */,
-				165AA4AC1E3419AB00579836 /* ViewController.swift */,
 				1664FAE41E3657B300E3E8D4 /* SettingsViewController.swift */,
 				1664FAE61E3665D700E3E8D4 /* SettingsTableViewController.swift */,
+				165AA4AC1E3419AB00579836 /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 				165AA4CC1E3463EA00579836 /* AddIceReportViewController.swift in Sources */,
 				165AA4AD1E3419AB00579836 /* ViewController.swift in Sources */,
 				165AA4BF1E341AB100579836 /* MapViewController.swift in Sources */,
+				160668341E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift in Sources */,
 				165AA4C81E345A7200579836 /* AddIceReportDelegate.swift in Sources */,
 				165AA4CA1E345B8300579836 /* RegisterUserViewController.swift in Sources */,
+				160668361E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift in Sources */,
 				165AA4AB1E3419AB00579836 /* AppDelegate.swift in Sources */,
 				1664FAE71E3665D700E3E8D4 /* SettingsTableViewController.swift in Sources */,
 				165AA4C11E34299800579836 /* Report.swift in Sources */,
@@ -364,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewthom.IceReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewthom.IceReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

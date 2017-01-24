@@ -9,11 +9,12 @@
 import UIKit
 import MapKit
 
-class SettingsTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController, NumberOfDaysToSearchDelegate {
 
     @IBOutlet var useMetricSwitch: UISwitch!
     @IBOutlet var mapTypeControl: UISegmentedControl!
     @IBOutlet var showDateTimeSwitch: UISwitch!
+    @IBOutlet var numberOfDaysLabel: UILabel!
     
     @IBAction func mapTypeChanged(_ sender: Any) {
         let index = mapTypeControl.selectedSegmentIndex
@@ -39,6 +40,9 @@ class SettingsTableViewController: UITableViewController {
         
         let showDateTime = UserDefaults.standard.bool(forKey: "showDateTime")
         showDateTimeSwitch.isOn = showDateTime
+        
+        let daysToSearch = UserDefaults.standard.integer(forKey: "daysToSearch")
+        numberOfDaysLabel.text = String(daysToSearch)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,14 +54,34 @@ class SettingsTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath.section == 3 && indexPath.row == 0) {
+            self.performSegue(withIdentifier: "numberOfDaysSegue", sender: nil)
+        }
+    }
+    
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "numberOfDaysSegue") {
+            let destination = segue.destination as! NumberOfDaysPickerViewController
+            destination.numberOfDaysDelegate = self
+        }
+    }
+    
+    func updateNumberOfDays(to: Int) {
+        UserDefaults.standard.set(to, forKey: "daysToSearch")
+        numberOfDaysLabel.text = String(to)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -93,14 +117,6 @@ class SettingsTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

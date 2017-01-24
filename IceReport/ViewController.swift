@@ -19,6 +19,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailAddressField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
+    @IBAction func registerTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "registerUserSegue", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
