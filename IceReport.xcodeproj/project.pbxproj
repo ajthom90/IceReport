@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		160668341E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */; };
 		160668361E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160668351E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift */; };
+		160668381E37DEB400DE49FF /* ShowLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160668371E37DEB400DE49FF /* ShowLicenseViewController.swift */; };
 		165AA4AB1E3419AB00579836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165AA4AA1E3419AB00579836 /* AppDelegate.swift */; };
-		165AA4AD1E3419AB00579836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165AA4AC1E3419AB00579836 /* ViewController.swift */; };
+		165AA4AD1E3419AB00579836 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165AA4AC1E3419AB00579836 /* LoginViewController.swift */; };
 		165AA4B01E3419AB00579836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165AA4AE1E3419AB00579836 /* Main.storyboard */; };
 		165AA4B21E3419AB00579836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165AA4B11E3419AB00579836 /* Assets.xcassets */; };
 		165AA4B51E3419AB00579836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165AA4B31E3419AB00579836 /* LaunchScreen.storyboard */; };
@@ -30,9 +31,10 @@
 /* Begin PBXFileReference section */
 		160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfDaysPickerViewController.swift; sourceTree = "<group>"; };
 		160668351E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfDaysToSearchDelegate.swift; sourceTree = "<group>"; };
+		160668371E37DEB400DE49FF /* ShowLicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLicenseViewController.swift; sourceTree = "<group>"; };
 		165AA4A71E3419AB00579836 /* IceReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165AA4AA1E3419AB00579836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		165AA4AC1E3419AB00579836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		165AA4AC1E3419AB00579836 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		165AA4AF1E3419AB00579836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		165AA4B11E3419AB00579836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165AA4B41E3419AB00579836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,12 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				165AA4CB1E3463EA00579836 /* AddIceReportViewController.swift */,
+				165AA4AC1E3419AB00579836 /* LoginViewController.swift */,
 				165AA4BE1E341AB100579836 /* MapViewController.swift */,
 				160668331E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift */,
 				165AA4C91E345B8300579836 /* RegisterUserViewController.swift */,
 				1664FAE41E3657B300E3E8D4 /* SettingsViewController.swift */,
 				1664FAE61E3665D700E3E8D4 /* SettingsTableViewController.swift */,
-				165AA4AC1E3419AB00579836 /* ViewController.swift */,
+				160668371E37DEB400DE49FF /* ShowLicenseViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -233,10 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				165AA4CC1E3463EA00579836 /* AddIceReportViewController.swift in Sources */,
-				165AA4AD1E3419AB00579836 /* ViewController.swift in Sources */,
+				165AA4AD1E3419AB00579836 /* LoginViewController.swift in Sources */,
 				165AA4BF1E341AB100579836 /* MapViewController.swift in Sources */,
 				160668341E37CC7200DE49FF /* NumberOfDaysPickerViewController.swift in Sources */,
 				165AA4C81E345A7200579836 /* AddIceReportDelegate.swift in Sources */,
+				160668381E37DEB400DE49FF /* ShowLicenseViewController.swift in Sources */,
 				165AA4CA1E345B8300579836 /* RegisterUserViewController.swift in Sources */,
 				160668361E37CCB100DE49FF /* NumberOfDaysToSearchDelegate.swift in Sources */,
 				165AA4AB1E3419AB00579836 /* AppDelegate.swift in Sources */,

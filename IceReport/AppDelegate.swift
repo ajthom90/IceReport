@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if let mainController = window?.rootViewController as? ViewController {
+        if let mainController = window?.rootViewController as? LoginViewController {
             if mainController.loggedInSessionId == nil {
                 completionHandler(.noData)
                 return

@@ -53,30 +53,29 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 		if let coor = mapView.userLocation.location?.coordinate{
 			mapView.setCenter(coor, animated: true)
 		}
-		//addLongPressGesture()
 		
 		self.startLoadingData()
 	}
-	
+
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
 		mapView.showsUserLocation = true;
 	}
-	
+
 	override func viewWillDisappear(_ animated: Bool) {
 		mapView.showsUserLocation = false
 	}
-	
+
 	func centerMap(_ center:CLLocationCoordinate2D){
 		self.saveCurrentLocation(center)
 		
 		let spanX = 0.05
 		let spanY = 0.05
 		
-		let newRegion = MKCoordinateRegion(center:center , span: MKCoordinateSpanMake(spanX, spanY))
+		let newRegion = MKCoordinateRegion(center:center, span: MKCoordinateSpanMake(spanX, spanY))
 		mapView.setRegion(newRegion, animated: true)
 	}
-	
+
 	func saveCurrentLocation(_ center:CLLocationCoordinate2D){
 		let message = "\(center.latitude) , \(center.longitude)"
 		print(message)
@@ -101,10 +100,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 			let ann = annotation as! IceReportAnnotation
 			let identifier = ann.reuseIdentifier
 			var view : MKPinAnnotationView
-			if let dequeueView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView{
+			if let dequeueView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
 				dequeueView.annotation = ann
 				view = dequeueView
-			}else{
+			} else {
 				view = MKPinAnnotationView(annotation: ann, reuseIdentifier: identifier)
 				view.canShowCallout = true
 			}
